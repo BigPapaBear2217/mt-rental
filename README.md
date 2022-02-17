@@ -10,4 +10,4 @@ qb-menu: https://github.com/qbcore-framework/qb-menu
 https://discord.gg/AQHbsahZsV 
 
 # Preview:
-https://streamable.com/4lbuj3
+https://youtu.be/aMmX_6x2-4s
