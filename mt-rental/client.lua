@@ -1,5 +1,18 @@
 local QBCore = exports['qb-core']:GetCoreObject()
 
+-- Criar blip no mapa
+Citizen.CreateThread(function()
+    local blip = AddBlipForCoord(-899.62, -2334.93, 6.71) -- Mudar coordenadas do blip aqui!
+	SetBlipSprite(blip, 67) -- Mudar estilo do blip aqui!
+	SetBlipDisplay(blip, 4)
+	SetBlipScale(blip, 0.7)
+	SetBlipAsShortRange(blip, true)
+	SetBlipColour(blip, 3)
+	BeginTextCommandSetBlipName("STRING")
+	AddTextComponentSubstringPlayerName("Escolera Rent a Car") -- Mudar nome do Blip aqui!
+    EndTextCommandSetBlipName(blip)
+end)
+
 -- Menu da garagem 
 RegisterNetEvent('mt-rental:client:MenuRental', function()
     exports['qb-menu']:openMenu({
